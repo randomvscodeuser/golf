@@ -46,9 +46,10 @@ function my_keydown(e)
 	console.log(keyPressed);
    if((ball_x==hole_x)&&(ball_y==hole_y)){
 	canvas.remove(ball.obj);
-   }
-document.getElementById("hd3").innerHTML="you have hit the goal!!";
+	   document.getElementById("hd3").innerHTML="you have hit the goal!!";
 document.getElementById("myCanvas").style.borderColor="red";
+   }
+
 	
 	else{
 		if(keyPressed == '38')
@@ -81,6 +82,7 @@ document.getElementById("myCanvas").style.borderColor="red";
 			console.log("block image height = " + block_image_height);
 			console.log("when up arrow key is pressed, x = " + ball_x + " , y = " + ball_y);
 			canvas.remove(ball.obj);
+			new_image();
 		}
 	}
 
